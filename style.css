@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container {
+  position: fixed;
+  margin: 0 auto;
+  z-index: -10;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 100vw;
+  height: 100vh;
+}
+.output_canvas{
+  width: 100vw;
+  height: 100vh;
+}
+#loading{
+  position:fixed;
+  width: 150px;
+  top:100px;
+  left:calc(50% - 75px);
+  display: block;
+}
+#howto{
+  border-radius: 50px;
+  width: 80px;
+  background-color: black;
+  display: none;
+  padding: 10px;
+  padding-bottom: 20px;
+  z-index: 30;
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#howto h3{
+  color:#bbb;
+  margin-bottom:0
+}
+.chapter{
+  width:100%;
+  text-align:center;
+}
+#tpng1, #tpng2, #tpng3{
+  width: 70px;
+}

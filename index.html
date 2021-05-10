@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+	<title>My first three.js app</title>
+	<style></style>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div id="loading">
+		<img src="./cat.gif" style="width: 150px;" >
+		<h1 style="text-align:center;">loading..</h1>
+		<h3 style="text-align:center;">30 seconds</br>or less</br>sorry..!</br></h3>
+<h5>Use a web camera</br>But, no recording!</h5>
+
+	</div>
+	<div class="container">
+		<video class="input_video" style="display:none;"></video>
+		<canvas class="output_canvas" width="1280px" height="720px"></canvas>
+		<div id="howto">
+			<div class="chapter">
+				<h3 id="rot">Rotate object</h3>
+				<img src="./cube3d.png" id="tpng1">
+			</div>
+			<div class="chapter">
+				<h3 id="zoin">Zoom out</h3>
+				<img src="./zoomin.png" id="tpng2">
+			</div>
+			<div class="chapter">
+				<h3 id="zout">Zoom in</h3>
+				<img src="./zoomup.png" id="tpng3">
+			</div>
+		</div>
+	</div>
+	<script src="js/three.js"></script>
+	<script src="js/MTLLoader.js"></script>
+	<script src="js/OBJLoader.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
