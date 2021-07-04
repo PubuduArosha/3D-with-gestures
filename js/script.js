@@ -73,9 +73,11 @@ mtlLoader.load("skeleton.mtl", function(materials){
               var posiz = (originalL - landmarks[5].x)*10
               camera.position.z = camera.position.z - posiz
               if(posiz >0){
+                console.log("Zoom IN")
                 elem3.style.color = 'red';
                 elem2.style.color = '#bbb';
               }else{
+                console.log("Zoom OUT")
                 elem2.style.color = 'red';
                 elem3.style.color = '#bbb';
               }
